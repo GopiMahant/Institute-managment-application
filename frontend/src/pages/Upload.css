@@ -1,0 +1,62 @@
+.category-select {
+  width: auto;
+  min-width: 200px;
+}
+
+.dropzone {
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: var(--bg-primary);
+}
+
+.dropzone:hover, .dropzone.dragging {
+  border-color: var(--accent-primary);
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.dropzone.uploading {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.dropzone-icon {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.dropzone:hover .dropzone-icon, .dropzone.dragging .dropzone-icon {
+  color: var(--accent-primary);
+  transform: translateY(-5px);
+}
+
+.dropzone-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.dropzone-hint {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.hidden-input {
+  display: none;
+}
+
+.file-name {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

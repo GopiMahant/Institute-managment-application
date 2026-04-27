@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+dist/
+release/
+*.log
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Electron/PyInstaller build artifacts
+build/
+dist-python/
+api_server.exe
+run_backend.exe
+
+# SQLite database
+database.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

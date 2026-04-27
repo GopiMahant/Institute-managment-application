@@ -1,0 +1,85 @@
+.filter-card {
+  padding: 1rem 1.5rem;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.filter-btn:hover {
+  background-color: var(--border-color-light);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  background-color: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+.row-warning {
+  background-color: rgba(245, 158, 11, 0.05) !important;
+}
+
+.row-warning td {
+  border-bottom-color: rgba(245, 158, 11, 0.2);
+}
+
+.quantity-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.quantity-badge.in-stock {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.quantity-badge.low-stock {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+.condition-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.condition-badge.new {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+.condition-badge.good {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--accent-primary);
+}
+.condition-badge.damaged {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+.condition-badge.lost {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
